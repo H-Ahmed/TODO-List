@@ -21,5 +21,18 @@
         </table>
     </div>
 
-    <button type="button" class="btn btn-default" ng-click="addTask()">Add Task</button>
+    <button type="button" class="btn btn-default" ng-click="showAddTask()">Add Task</button>
+
+    <div ng-show="addTaskshow">
+        <label>Task Name</label>
+        <input type="text" ng-model="taskname">
+
+        <label>Task Deadline</label>
+        <input type="text" ng-model="taskdeadline">
+
+        <label>Task Importance</label>
+        <input type="text" ng-model="taskimportance">
+
+        <button type="button" class="btn btn-default" ng-click="hideAddTask()">Add Task</button>
+    </div>
 </div>

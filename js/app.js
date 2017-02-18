@@ -23,8 +23,13 @@ todoList.controller('taskList',['$scope', '$http', function($scope, $http){
     }
 
 
-    $scope.addTask = function(){
-        alert("Adding Task");
+    $scope.showAddTask = function(){
+        $scope.addTaskshow = true;
+    }
+
+    $scope.hideAddTask = function(){
+
+        $scope.addTaskshow = false;
     }
 
 
